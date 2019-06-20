@@ -13,7 +13,6 @@ class StudentsController < ApplicationController
 
   def activate
     set_student
-    binding.pry
     if @student.active == true
       @student.active = false
     else
